@@ -19,7 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="resources\Game.cpp" />
+    <ClCompile Include="resources\GameObject.cpp" />
+    <ClCompile Include="resources\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resources\Game.h" />
+    <ClInclude Include="resources\GameObject.h" />
+    <ClInclude Include="resources\Vector2.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

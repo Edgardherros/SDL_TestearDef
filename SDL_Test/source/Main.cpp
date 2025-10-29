@@ -1,9 +1,33 @@
 #include <SDL3/SDL.h>
+#include <iostream>
+#include <exception>
+#include "Game.h"
 int main()
 {
-	if (!SDL_Init(SDL_INIT_VIDEO))
+	
+
+	try
 	{
-		throw SDL_GetError();
+		
+		
+
+		
 	}
+	catch (std::exception& e)
+	{
+		
+		return -1;
+
+	}
+
+	while (_isRunning)
+	{
+		
+
+		
+		
+	}
+
+	
 	return 0;
 }
