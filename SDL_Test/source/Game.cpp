@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "ImageObject.h"
 void Game::Init()
 {
 	InitSDL();
@@ -6,7 +7,7 @@ void Game::Init()
 	SDL_SetRenderDrawColor(_renderer, 225, 0, 0, 0xFF);
 	_isRunning = true;
 
-	_gameObjects.push_back(GameObject("resources/image.png", _renderer));
+	_gameObjects.push_back(new ImageObject("resources/image.png", _renderer));
 }
 
 void Game::InitSDL()
@@ -27,17 +28,17 @@ void Game::HandleEvents()
 }
 void Game::Update()
 {
-	for (GameObject go : _gameObjects)
+	for (Object* go : _gameObjects)
 	{
-		go.Update();
+		go->Update();
 	}
 }
 void Game::Render()
 {
 	SDL_RenderClear(_renderer);
-	for (GameObject go : _gameObjects)
+	for (Object* go : _gameObjects)
 	{
-		go.Render(_renderer);
+		go->Render(_renderer);
 	}
 	SDL_RenderPresent(_renderer);
 }

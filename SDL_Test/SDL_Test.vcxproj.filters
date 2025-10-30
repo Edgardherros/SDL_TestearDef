@@ -15,24 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="resources\GameObject.cpp">
+    <ClCompile Include="source\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="resources\Game.cpp">
+    <ClCompile Include="source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="resources\Main.cpp">
+    <ClCompile Include="source\ImageRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resources\Vector2.h">
+    <ClInclude Include="source\Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resources\GameObject.h">
+    <ClInclude Include="source\GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resources\Game.h">
+    <ClInclude Include="source\Vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RenderManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
