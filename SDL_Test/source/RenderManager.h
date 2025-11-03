@@ -23,7 +23,7 @@ public:
 	}
 
 	void Init();
-	void Realase();
+	void Release();
 	void ClearScreen();
 	void RendeScreen();
 
@@ -35,7 +35,7 @@ private:
 	RenderManager() = default;
 	RenderManager(RenderManager&) = default;
 	RenderManager& operator=(const RenderManager&) = default;
-	~RenderManager() {} 
+	~RenderManager();
 
 	SDL_Window* _window;
 	SDL_Renderer* _renderer;
